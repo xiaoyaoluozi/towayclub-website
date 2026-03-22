@@ -1,0 +1,58 @@
+#!/usr/bin/expect -f
+
+set timeout 60
+set host "120.26.179.205"
+set user "root"
+set password "Ali201903"
+
+spawn ssh -o StrictHostKeyChecking=no $user@$host
+
+expect {
+    "password:" {
+        send "$password\r"
+        expect "# "
+    }
+    "# " {
+        # 已经登录
+    }
+}
+
+# 安装 Node.js
+send "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash\r"
+expect "# "
+
+send "source ~/.bashrc && nvm install 18\r"
+expect "# "
+
+send "npm install -g pm2\r"
+expect "# "
+
+# 克隆项目
+send "mkdir -p /var/www/towayclub-website && cd /var/www/towayclub-website\r"
+expect "# "
+
+send "git clone https://github.com/xiaoyaoluozi/towayclub-website.git .\r"
+expect "# "
+
+# 安装依赖并构建
+send "npm install\r"
+expect "# "
+
+send "npm run build\r"
+expect "# "
+
+# 启动服务
+send "pm2 start npm --name \"towayclub\" -- start --port 3000\r"
+expect "# "
+
+send "pm2 save\r"
+expect "# "
+
+send "pm2 status\r"
+expect "# "
+
+send "echo \"✅ 完成！访问：http://120.26.179.205:3000\"\r"
+expect "# "
+
+send "exit\r"
+expect eof
