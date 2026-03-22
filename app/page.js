@@ -55,7 +55,11 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {recentEvents.map(event => (
               <div key={event.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div className={`h-48 bg-gradient-to-r ${event.image}`}></div>
+                {event.image && event.image.startsWith('http') ? (
+                  <img src={event.image} alt={event.title} className="w-full h-48 object-cover" />
+                ) : (
+                  <div className={`h-48 bg-gradient-to-r ${event.image}`}></div>
+                )}
                 <div className="p-6">
                   <div className="text-sm text-primary font-semibold mb-2">{event.categoryLabel}</div>
                   <h3 className="text-xl font-bold mb-3">{event.title}</h3>
