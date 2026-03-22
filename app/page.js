@@ -1,6 +1,10 @@
 import Link from 'next/link'
+import { events } from '../data/events'
 
 export default function Home() {
+  // 获取最近的 3 个活动
+  const recentEvents = events.slice(0, 3)
+  
   return (
     <div>
       {/* 英雄区 */}
@@ -49,56 +53,28 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-12">近期活动</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {/* 活动卡片 1 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="h-48 bg-gradient-to-r from-green-400 to-blue-500"></div>
-              <div className="p-6">
-                <div className="text-sm text-primary font-semibold mb-2">户外活动</div>
-                <h3 className="text-xl font-bold mb-3">11.29 漫步鲲鹏径 13 段</h3>
-                <p className="text-gray-600 mb-4">共赴马峦山秋色之约</p>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-500">📅 2025-11-29</span>
-                  <span className="text-secondary font-semibold">剩余 15/30</span>
+            {recentEvents.map(event => (
+              <div key={event.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div className={`h-48 bg-gradient-to-r ${event.image}`}></div>
+                <div className="p-6">
+                  <div className="text-sm text-primary font-semibold mb-2">{event.categoryLabel}</div>
+                  <h3 className="text-xl font-bold mb-3">{event.title}</h3>
+                  <p className="text-gray-600 mb-4">{event.description?.slice(0, 50)}...</p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-500">📅 {event.date}</span>
+                    <span className={event.remaining < 10 ? 'text-secondary font-semibold' : 'text-green-600 font-semibold'}>
+                      {event.price === 0 ? '免费' : `剩余${event.remaining}/${event.total}`}
+                    </span>
+                  </div>
+                  <Link 
+                    href={`/events/${event.id}`} 
+                    className="block mt-4 bg-primary hover:bg-green-700 text-white text-center py-2 rounded-lg transition"
+                  >
+                    {event.price === 0 ? '免费参加' : '立即报名'}
+                  </Link>
                 </div>
-                <Link href="/events/1" className="block mt-4 bg-primary hover:bg-green-700 text-white text-center py-2 rounded-lg transition">
-                  立即报名
-                </Link>
               </div>
-            </div>
-
-            {/* 活动卡片 2 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="h-48 bg-gradient-to-r from-blue-400 to-purple-500"></div>
-              <div className="p-6">
-                <div className="text-sm text-primary font-semibold mb-2">常规活动</div>
-                <h3 className="text-xl font-bold mb-3">夜登南山第 335 期</h3>
-                <p className="text-gray-600 mb-4">每周五晚，风雨无阻</p>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-500">📅 每周五 19:30</span>
-                  <span className="text-green-600 font-semibold">免费</span>
-                </div>
-                <Link href="/events/2" className="block mt-4 bg-primary hover:bg-green-700 text-white text-center py-2 rounded-lg transition">
-                  免费参加
-                </Link>
-              </div>
-            </div>
-
-            {/* 活动卡片 3 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="h-48 bg-gradient-to-r from-orange-400 to-red-500"></div>
-              <div className="p-6">
-                <div className="text-sm text-primary font-semibold mb-2">创业赋能</div>
-                <h3 className="text-xl font-bold mb-3">AI 创业沙龙</h3>
-                <p className="text-gray-600 mb-4">AI 时代的创业机会</p>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-500">📅 2025-12-05</span>
-                  <span className="text-secondary font-semibold">剩余 20/50</span>
-                </div>
-                <Link href="/events/3" className="block mt-4 bg-primary hover:bg-green-700 text-white text-center py-2 rounded-lg transition">
-                  立即报名
-                </Link>
-              </div>
-            </div>
+            ))}
           </div>
           <div className="text-center mt-12">
             <Link href="/events" className="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full font-semibold transition">
@@ -135,32 +111,32 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-12">突友说</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <p className="text-gray-600 mb-4">"在突围，我找到了志同道合的朋友，也找到了更好的自己。"</p>
+              <p className="text-gray-600 mb-4">"在突围，我找到了志同道合的朋友，也找到了更好的自己。从一个人参加活动，到现在带着家人一起，突围成了我们生活的一部分。"</p>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                <div className="w-12 h-12 bg-gradient-to-br from-green-300 to-blue-500 rounded-full mr-4 flex items-center justify-center text-white font-bold">张</div>
                 <div>
                   <div className="font-semibold">老张</div>
-                  <div className="text-sm text-gray-500">参与 5 年</div>
+                  <div className="text-sm text-gray-500">参与 5 年 · 终身会员</div>
                 </div>
               </div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <p className="text-gray-600 mb-4">"每次活动都是一次充电，回到城市又充满能量。"</p>
+              <p className="text-gray-600 mb-4">"每次活动都是一次充电，回到城市又充满能量。通过突围，我认识了很多优秀的人，甚至找到了现在的创业合伙人。"</p>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-300 to-pink-500 rounded-full mr-4 flex items-center justify-center text-white font-bold">李</div>
                 <div>
                   <div className="font-semibold">小李</div>
-                  <div className="text-sm text-gray-500">参与 3 年</div>
+                  <div className="text-sm text-gray-500">参与 3 年 · VIP 会员</div>
                 </div>
               </div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <p className="text-gray-600 mb-4">"从一个人参加活动，到带着家人一起，突围成了我们生活的一部分。"</p>
+              <p className="text-gray-600 mb-4">"从 2015 年加入到现在，参加了 200+ 场活动。突围不只是一个俱乐部，更像是一个温暖的大家庭。13 年坚持，一群人同行！"</p>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                <div className="w-12 h-12 bg-gradient-to-br from-orange-300 to-red-500 rounded-full mr-4 flex items-center justify-center text-white font-bold">王</div>
                 <div>
                   <div className="font-semibold">王姐</div>
-                  <div className="text-sm text-gray-500">参与 7 年</div>
+                  <div className="text-sm text-gray-500">参与 7 年 · 终身会员</div>
                 </div>
               </div>
             </div>
