@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, Suspense } from 'react'
+import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { events } from '../../data/events'
 
@@ -12,8 +13,18 @@ const categories = [
   { value: 'social', label: '🤝 社交' },
 ]
 
-export default function EventsPage() {
-  const [filter, setFilter] = useState('all')
+function EventsContent() {
+  const searchParams = useSearchParams()
+  const categoryParam = searchParams.get('category')
+  
+  const [filter, setFilter] = useState(categoryParam || 'all')
+
+  // 当 URL 参数变化时，更新筛选器
+  useEffect(() => {
+    if (categoryParam) {
+      setFilter(categoryParam)
+    }
+  }, [categoryParam])
 
   const filteredEvents = filter === 'all' 
     ? events 
@@ -131,5 +142,13 @@ export default function EventsPage() {
         </div>
       </section>
     </div>
+  )
+}
+
+export default function EventsPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-gray-50 flex items-center justify-center"><div className="text-2xl">加载中...</div></div>}>
+      <EventsContent />
+    </Suspense>
   )
 }

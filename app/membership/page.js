@@ -7,118 +7,74 @@ export default function MembershipPage() {
       <section className="bg-gradient-to-r from-primary to-blue-500 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-4">会员中心</h1>
-          <p className="text-xl opacity-90">加入突围俱乐部，享受专属权益</p>
+          <p className="text-xl opacity-90">突围俱乐部是公益组织，所有活动免费或 AA 制</p>
         </div>
       </section>
 
       {/* 会员权益 */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center mb-12">会员权益</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* 普通会员 */}
-            <div className="bg-white rounded-lg shadow-lg p-8 border-2 border-gray-200">
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold mb-2">普通会员</h3>
-                <div className="text-4xl font-bold text-gray-400">免费</div>
+          <h2 className="text-4xl font-bold text-center mb-12">关于我们</h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
+              <h3 className="text-2xl font-bold mb-6 text-center">突围俱乐部是公益组织</h3>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  <strong className="text-primary">突围俱乐部成立于 2012 年</strong>，是一个<span className="text-green-600 font-semibold">非营利性、公益性质</span>的社群组织。
+                </p>
+                <p>
+                  13 年来，我们始终坚持<span className="text-green-600 font-semibold">公益、自愿、AA、平等</span>的原则，组织户外活动、读书会、创业交流等活动。
+                </p>
+                <p>
+                  <strong className="text-primary">所有活动免费或 AA 制</strong>，没有会员费，没有隐形消费。活动费用透明，多退少补。
+                </p>
+                <p>
+                  在这里，你可以找到志同道合的朋友，可以找到更好的自己，可以找到生活的另一种可能。<strong className="text-primary">突围，不只是俱乐部，更是一个家。</strong>
+                </p>
               </div>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>参加活动资格</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>公众号文章阅读</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>活动照片查看</span>
-                </li>
-                <li className="flex items-start text-gray-400">
-                  <span className="mr-3">✗</span>
-                  <span>会员折扣</span>
-                </li>
-                <li className="flex items-start text-gray-400">
-                  <span className="mr-3">✗</span>
-                  <span>专属活动</span>
-                </li>
-              </ul>
-              <Link 
-                href="/events"
-                className="block w-full bg-gray-100 hover:bg-gray-200 text-gray-700 text-center py-3 rounded-lg font-semibold transition"
-              >
-                免费注册
-              </Link>
             </div>
 
-            {/* VIP 会员 */}
-            <div className="bg-gradient-to-br from-primary to-blue-500 rounded-lg shadow-lg p-8 text-white transform scale-105">
-              <div className="absolute top-0 right-0 bg-secondary text-white px-4 py-1 rounded-bl-lg rounded-tr-lg font-semibold">
-                推荐
+            {/* 核心原则 */}
+            <div className="grid md:grid-cols-4 gap-6 mb-8">
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <div className="text-4xl mb-4">🌟</div>
+                <h4 className="text-xl font-bold mb-2">公益</h4>
+                <p className="text-gray-600">非营利组织</p>
               </div>
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold mb-2">VIP 会员</h3>
-                <div className="text-4xl font-bold">¥199<span className="text-lg font-normal">/年</span></div>
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <div className="text-4xl mb-4">🤝</div>
+                <h4 className="text-xl font-bold mb-2">自愿</h4>
+                <p className="text-gray-600">自由参与</p>
               </div>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start">
-                  <span className="mr-3">✓</span>
-                  <span>所有普通会员权益</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-3">✓</span>
-                  <span>活动会员价（8-9 折）</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-3">✓</span>
-                  <span>专属会员活动</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-3">✓</span>
-                  <span>生日礼物</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-3">✓</span>
-                  <span>优先报名权</span>
-                </li>
-              </ul>
-              <button className="block w-full bg-white text-primary hover:bg-gray-100 text-center py-3 rounded-lg font-semibold transition">
-                立即开通
-              </button>
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <div className="text-4xl mb-4">💰</div>
+                <h4 className="text-xl font-bold mb-2">AA</h4>
+                <p className="text-gray-600">费用透明</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <div className="text-4xl mb-4">❤️</div>
+                <h4 className="text-xl font-bold mb-2">平等</h4>
+                <p className="text-gray-600">人人平等</p>
+              </div>
             </div>
 
-            {/* 终身会员 */}
-            <div className="bg-white rounded-lg shadow-lg p-8 border-2 border-secondary">
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold mb-2">终身会员</h3>
-                <div className="text-4xl font-bold text-secondary">¥999</div>
+            {/* 参与方式 */}
+            <div className="bg-gradient-to-br from-primary to-blue-500 text-white p-8 rounded-lg shadow-lg">
+              <h3 className="text-2xl font-bold mb-6 text-center">如何参与</h3>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div>
+                  <h4 className="text-xl font-bold mb-3">1. 关注公众号</h4>
+                  <p className="opacity-90">关注"突围俱乐部"公众号，获取最新活动信息</p>
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold mb-3">2. 参加活动</h4>
+                  <p className="opacity-90">选择感兴趣的活动，按指引报名参与</p>
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold mb-3">3. 融入集体</h4>
+                  <p className="opacity-90">认识志同道合的朋友，一起成长</p>
+                </div>
               </div>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>所有 VIP 会员权益</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>终身有效</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>终身会员折扣（7-8 折）</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>年度大礼包</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>创始人俱乐部资格</span>
-                </li>
-              </ul>
-              <button className="block w-full bg-secondary hover:bg-orange-600 text-white text-center py-3 rounded-lg font-semibold transition">
-                立即开通
-              </button>
             </div>
           </div>
         </div>

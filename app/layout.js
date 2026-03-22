@@ -18,9 +18,9 @@ export default function RootLayout({ children }) {
                 <div className="ml-10 flex items-baseline space-x-4">
                   <Link href="/" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">首页</Link>
                   <Link href="/events" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">活动日历</Link>
-                  <Link href="/outdoor" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">户外活动</Link>
-                  <Link href="/reading" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">读书会</Link>
-                  <Link href="/startup" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">创业赋能</Link>
+                  <Link href="/events?category=outdoor" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">户外活动</Link>
+                  <Link href="/events?category=reading" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">读书会</Link>
+                  <Link href="/events?category=startup" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">创业赋能</Link>
                   <Link href="/membership" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">会员中心</Link>
                   <Link href="/about" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">关于我们</Link>
                 </div>
