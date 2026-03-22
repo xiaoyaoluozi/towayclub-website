@@ -88,19 +88,37 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-12">精彩瞬间</h2>
+          <p className="text-center text-gray-600 mb-8 text-lg">13 年，660+ 场活动，11500+ 人次参与，太多精彩值得记录</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="h-64 bg-gradient-to-br from-green-300 to-blue-500 rounded-lg flex items-center justify-center text-white">
-              七娘山日出
+            <div className="relative group overflow-hidden rounded-lg shadow-lg">
+              <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop" alt="七娘山日出" className="w-full h-64 object-cover group-hover:scale-110 transition duration-300" />
+              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                <span className="text-white text-lg font-bold">七娘山日出</span>
+              </div>
             </div>
-            <div className="h-64 bg-gradient-to-br from-orange-300 to-red-500 rounded-lg flex items-center justify-center text-white">
-              马峦山瀑布
+            <div className="relative group overflow-hidden rounded-lg shadow-lg">
+              <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=400&h=300&fit=crop" alt="马峦山瀑布" className="w-full h-64 object-cover group-hover:scale-110 transition duration-300" />
+              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                <span className="text-white text-lg font-bold">马峦山瀑布</span>
+              </div>
             </div>
-            <div className="h-64 bg-gradient-to-br from-purple-300 to-pink-500 rounded-lg flex items-center justify-center text-white">
-              新疆伊犁
+            <div className="relative group overflow-hidden rounded-lg shadow-lg">
+              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=300&fit=crop" alt="新疆伊犁" className="w-full h-64 object-cover group-hover:scale-110 transition duration-300" />
+              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                <span className="text-white text-lg font-bold">新疆伊犁</span>
+              </div>
             </div>
-            <div className="h-64 bg-gradient-to-br from-blue-300 to-cyan-500 rounded-lg flex items-center justify-center text-white">
-              麦理浩径
+            <div className="relative group overflow-hidden rounded-lg shadow-lg">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="麦理浩径" className="w-full h-64 object-cover group-hover:scale-110 transition duration-300" />
+              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                <span className="text-white text-lg font-bold">麦理浩径</span>
+              </div>
             </div>
+          </div>
+          <div className="text-center mt-8">
+            <a href="https://mp.weixin.qq.com" target="_blank" className="text-primary hover:underline text-lg font-semibold">
+              关注公众号，查看更多活动照片 →
+            </a>
           </div>
         </div>
       </section>

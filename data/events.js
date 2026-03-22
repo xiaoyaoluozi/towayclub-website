@@ -16,7 +16,7 @@ export const events = [
     total: 30,
     remaining: 15,
     difficulty: 2,
-    image: 'from-green-400 to-blue-500',
+    image: 'https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=400&h=300&fit=crop',
     description: '马峦山，深圳东部的一颗明珠。这里有深圳最大的瀑布群，有保存完好的客家古村落，还有漫山遍野的梅花。即使走错了路，也能发现意想不到的瀑布、现宰的美食、未开的梅花——这就是户外的魅力。',
     highlights: [
       '深圳最大瀑布群',
