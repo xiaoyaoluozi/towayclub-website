@@ -119,39 +119,34 @@ export default function MembershipPage() {
         </div>
       </section>
 
-      {/* 常见问题 */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center mb-12">常见问题</h2>
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-3">Q: 如何成为会员？</h3>
-              <p className="text-gray-700">A: 点击"立即开通"按钮，填写信息并完成支付即可成为会员。会员资格即时生效。</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-3">Q: 会员有效期多久？</h3>
-              <p className="text-gray-700">A: VIP 会员有效期为 1 年，到期后可续费。终身会员永久有效。</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-3">Q: 会员折扣如何使用？</h3>
-              <p className="text-gray-700">A: 报名时系统会自动识别会员身份，享受对应折扣价格。</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-3">Q: 可以退款吗？</h3>
-              <p className="text-gray-700">A: 会员开通后 7 天内可全额退款，超过 7 天不予退款，请谨慎购买。</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA 区 */}
+      {/* 如何参与 */}
       <section className="py-16 bg-gradient-to-r from-primary to-blue-500 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">准备好加入了吗？</h2>
-          <p className="text-xl mb-8">成为会员，享受专属权益，找到属于你的圈子</p>
-          <button className="bg-white text-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition">
-            立即开通会员 →
-          </button>
+          <h2 className="text-4xl font-bold mb-6">如何参与我们的活动？</h2>
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <div className="text-5xl mb-4">📱</div>
+              <h3 className="text-xl font-bold mb-2">1. 关注公众号</h3>
+              <p className="opacity-90">关注"突围俱乐部"公众号，获取最新活动信息</p>
+            </div>
+            <div>
+              <div className="text-5xl mb-4">📝</div>
+              <h3 className="text-xl font-bold mb-2">2. 报名参加</h3>
+              <p className="opacity-90">选择感兴趣的活动，按指引报名参与</p>
+            </div>
+            <div>
+              <div className="text-5xl mb-4">🎉</div>
+              <h3 className="text-xl font-bold mb-2">3. 参与活动</h3>
+              <p className="opacity-90">按时参加活动，认识志同道合的朋友</p>
+            </div>
+          </div>
+          <a 
+            href="https://mp.weixin.qq.com" 
+            target="_blank"
+            className="inline-block bg-white text-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition"
+          >
+            关注公众号 →
+          </a>
         </div>
       </section>
     </div>
