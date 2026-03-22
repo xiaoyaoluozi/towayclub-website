@@ -67,7 +67,11 @@ function EventsContent() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredEvents.map(event => (
               <div key={event.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-                <div className={`h-48 bg-gradient-to-r ${event.image}`}></div>
+                {event.image && event.image.startsWith('http') ? (
+                  <img src={event.image} alt={event.title} className="w-full h-48 object-cover" />
+                ) : (
+                  <div className={`h-48 bg-gradient-to-r ${event.image}`}></div>
+                )}
                 <div className="p-6">
                   <div className="text-sm text-primary font-semibold mb-2">
                     {event.categoryLabel}

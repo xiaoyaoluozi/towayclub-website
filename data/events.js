@@ -38,8 +38,8 @@ export const events = [
     total: 50,
     remaining: 50,
     difficulty: 1,
-    image: 'from-blue-400 to-purple-500',
-    description: '每周五晚，大南山，风雨无阻。这是突围最经典、最持久的活动。从 2013 年到现在，334 期+，从未间断。有人在这里认识了 lifelong 的朋友，有人在这里找到了人生的伴侣，有人在这里走出了人生的低谷。',
+    image: 'https://images.unsplash.com/photo-1459666644532-a8762589f3f3?w=400&h=300&fit=crop',
+    description: '每周五晚，大南山，风雨无阻。这是突围最经典、最持久的活动。从 2013 年到现在，334 期 +，从未间断。有人在这里认识了 lifelong 的朋友，有人在这里找到了人生的伴侣，有人在这里走出了人生的低谷。',
     highlights: [
       '13 年坚持，334 期+',
       '每周五晚固定活动',
@@ -60,7 +60,7 @@ export const events = [
     total: 50,
     remaining: 20,
     difficulty: 0,
-    image: 'from-orange-400 to-red-500',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop',
     description: 'AI 时代，抱团突围。创业沙龙、资源对接、项目合作，找到志同道合的创业伙伴。',
     highlights: [
       'AI 行业趋势分享',
@@ -82,7 +82,7 @@ export const events = [
     total: 25,
     remaining: 8,
     difficulty: 3,
-    image: 'from-green-400 to-teal-500',
+    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop',
     description: '麦理浩径，香港最长的远足径，被誉为"全球最佳步道之一"。浪茄湾 & 破边州，绝美海岸线，山海相连的壮丽景色。',
     highlights: [
       '全球最佳步道之一',
@@ -104,7 +104,7 @@ export const events = [
     total: 100,
     remaining: 65,
     difficulty: 0,
-    image: 'from-purple-400 to-pink-500',
+    image: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=400&h=300&fit=crop',
     description: '深度阅读，思维碰撞。每月共读一本书，线下分享会，在交流中成长，在阅读中突围。',
     highlights: [
       '深度共读一本书',
@@ -126,7 +126,7 @@ export const events = [
     total: 200,
     remaining: 56,
     difficulty: 0,
-    image: 'from-red-400 to-orange-500',
+    image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=300&fit=crop',
     description: '13 年坚持，一群人同行。年度盛典，回顾过往，展望未来，感恩有你。',
     highlights: [
       '13 周年庆典',
@@ -148,7 +148,7 @@ export const events = [
     total: 20,
     remaining: 0,
     difficulty: 2,
-    image: 'from-green-400 to-blue-500',
+    image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=300&fit=crop',
     description: '穿越独库公路，邂逅北疆夏日童话。薰衣草花海、那拉提草原、赛里木湖，大美西域，一生难忘。',
     highlights: [
       '独库公路穿越',
@@ -170,7 +170,7 @@ export const events = [
     total: 30,
     remaining: 0,
     difficulty: 3,
-    image: 'from-pink-400 to-purple-500',
+    image: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop',
     description: '七娘山，深圳第二高峰，山海相连，景色壮丽。秋季粉黛乱子草盛开，粉色花海，如梦如幻。',
     highlights: [
       '深圳第二高峰',
@@ -192,7 +192,7 @@ export const events = [
     total: 30,
     remaining: 12,
     difficulty: 2,
-    image: 'from-blue-400 to-green-500',
+    image: 'https://images.unsplash.com/photo-1501555088619-7fd56c582297?w=400&h=300&fit=crop',
     description: '深圳鲲鹏径，贯穿深圳东西的新步道。山海相连，城市与自然完美融合。',
     highlights: [
       '深圳新地标',
@@ -214,7 +214,7 @@ export const events = [
     total: 500,
     remaining: 0,
     difficulty: 1,
-    image: 'from-red-400 to-orange-500',
+    image: 'https://images.unsplash.com/photo-1552674605-5d28c4e1902c?w=400&h=300&fit=crop',
     description: '十周年，徒步十公里。一群人，一条路，一起走。感恩十年有你，期待下一个十年。',
     highlights: [
       '十周年特别活动',
@@ -238,7 +238,7 @@ export const events = [
     total: 100,
     remaining: 0,
     difficulty: 1,
-    image: 'from-blue-400 to-purple-500',
+    image: 'https://images.unsplash.com/photo-1478131143331-19ef4c293a28?w=400&h=300&fit=crop',
     description: '夜登南山第 100 期里程碑活动。百人夜爬，盛况空前。13 年坚持，从第 1 期到第 334 期，从未间断。',
     highlights: [
       '第 100 期里程碑',
@@ -260,7 +260,7 @@ export const events = [
     total: 150,
     remaining: 0,
     difficulty: 0,
-    image: 'from-red-400 to-orange-500',
+    image: 'https://images.unsplash.com/photo-1530103862676-de3c9da59af7?w=400&h=300&fit=crop',
     description: '三周年，一群人，一条路，一起走。感恩有你，期待未来。',
     highlights: [
       '三周年庆典',
@@ -282,7 +282,7 @@ export const events = [
     total: 15,
     remaining: 0,
     difficulty: 4,
-    image: 'from-blue-400 to-indigo-500',
+    image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=400&h=300&fit=crop',
     description: '跟我去西藏，是信仰，是远方。布达拉宫、纳木错、珠峰大本营，一生必去的地方。',
     highlights: [
       '布达拉宫',
@@ -304,7 +304,7 @@ export const events = [
     total: 20,
     remaining: 0,
     difficulty: 2,
-    image: 'from-green-400 to-emerald-500',
+    image: 'https://images.unsplash.com/photo-1518182170546-0766ce6fec56?w=400&h=300&fit=crop',
     description: '没错，突友们又要去大美新疆了！喀纳斯、禾木、赛里木湖，去了心就僵在那里回不来了。',
     highlights: [
       '喀纳斯湖',
@@ -326,7 +326,7 @@ export const events = [
     total: 50,
     remaining: 0,
     difficulty: 3,
-    image: 'from-green-400 to-teal-500',
+    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop',
     description: '五周年，重温七娘山。山海相连，景色壮丽。一群人，一起走，一起成长。',
     highlights: [
       '五周年',
@@ -348,7 +348,7 @@ export const events = [
     total: 20,
     remaining: 0,
     difficulty: 1,
-    image: 'from-blue-400 to-cyan-500',
+    image: 'https://images.unsplash.com/photo-1516483638261-4170d6cd2797?w=400&h=300&fit=crop',
     description: '在洱海，沉醉于那抹蓝，那片静美。大理古城、洱海骑行、双廊古镇，寻找诗和远方。',
     highlights: [
       '洱海骑行',
@@ -370,7 +370,7 @@ export const events = [
     total: 20,
     remaining: 0,
     difficulty: 1,
-    image: 'from-pink-400 to-rose-500',
+    image: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&h=300&fit=crop',
     description: '在丽江，温柔地遇见你。丽江古城、玉龙雪山、束河古镇，遇见最美的自己。',
     highlights: [
       '丽江古城',
@@ -392,7 +392,7 @@ export const events = [
     total: 20,
     remaining: 0,
     difficulty: 3,
-    image: 'from-purple-400 to-indigo-500',
+    image: 'https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?w=400&h=300&fit=crop',
     description: '香格里拉，梦一样的地方。普达措、松赞林寺、梅里雪山，寻找心中的香格里拉。',
     highlights: [
       '普达措',
@@ -414,7 +414,7 @@ export const events = [
     total: 50,
     remaining: 0,
     difficulty: 2,
-    image: 'from-green-400 to-lime-500',
+    image: 'https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=400&h=300&fit=crop',
     description: '阴那山露营，星河云海，只待你来！突破围城，寻找力量的旅途。',
     highlights: [
       '星河云海',
@@ -436,7 +436,7 @@ export const events = [
     total: 30,
     remaining: 0,
     difficulty: 2,
-    image: 'from-blue-400 to-cyan-500',
+    image: 'https://images.unsplash.com/photo-1504280506508-44880832d01e?w=400&h=300&fit=crop',
     description: '香港蒲台岛，露营浮潜看海。海角天涯，海天一色，感受大海的呼吸。',
     highlights: [
       '海岛露营',
