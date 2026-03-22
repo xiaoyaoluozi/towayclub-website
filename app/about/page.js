@@ -25,7 +25,22 @@ export default function AboutPage() {
                   最初只是几个朋友周末约着爬山、徒步，没想到这个简单的想法，吸引了越来越多志同道合的人加入。
                 </p>
                 <p>
-                  <strong className="text-primary">13 年过去了</strong>，我们从最初的几个人，发展到如今数千人的大家庭。从深圳的山海，到新疆的草原；从香港的海岸线，到西藏的雪山——我们用脚步丈量大地，用汗水书写友谊。
+                  <strong className="text-primary">2013 年</strong>，夜登南山活动开始，每周五晚，风雨无阻。从第 1 期到第 334 期+，13 年坚持，从未间断。
+                </p>
+                <p>
+                  <strong className="text-primary">2015 年</strong>，会员突破 1000 人，组织了云南、西藏等长途旅行，活动类型从户外扩展到读书、创业。
+                </p>
+                <p>
+                  <strong className="text-primary">2017 年</strong>，五周年庆典，组织新疆大美环线，突友们说："去了心就僵在那里回不来了"。
+                </p>
+                <p>
+                  <strong className="text-primary">2022 年</strong>，十周年庆典，徒步十公里活动，500 人参与，盛况空前。
+                </p>
+                <p>
+                  <strong className="text-primary">2024-2025 年</strong>，转型 AI+ 创业赋能，组织 AI 创业沙龙、资源对接，帮助突友在 AI 时代抱团突围。
+                </p>
+                <p>
+                  <strong className="text-primary">2026 年</strong>，13 年坚持，我们从最初的几个人，发展到如今 5000+ 会员的大家庭。从深圳的山海，到新疆的草原；从香港的海岸线，到西藏的雪山——我们用脚步丈量大地，用汗水书写友谊。
                 </p>
                 <p>
                   突围，不只是俱乐部，更是一个家。在这里，你可以找到志同道合的朋友，可以找到更好的自己，可以找到生活的另一种可能。

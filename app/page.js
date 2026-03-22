@@ -109,7 +109,7 @@ export default function Home() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-12">突友说</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <p className="text-gray-600 mb-4">"在突围，我找到了志同道合的朋友，也找到了更好的自己。从一个人参加活动，到现在带着家人一起，突围成了我们生活的一部分。"</p>
               <div className="flex items-center">
@@ -137,6 +137,36 @@ export default function Home() {
                 <div>
                   <div className="font-semibold">王姐</div>
                   <div className="text-sm text-gray-500">参与 7 年 · 终身会员</div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <p className="text-gray-600 mb-4">"夜登南山参加了 50 多期，每次都有新的收获。在这里认识了 lifelong 的朋友，我们一起爬山、读书、创业，共同成长。"</p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-300 to-cyan-500 rounded-full mr-4 flex items-center justify-center text-white font-bold">陈</div>
+                <div>
+                  <div className="font-semibold">陈哥</div>
+                  <div className="text-sm text-gray-500">参与 6 年 · VIP 会员</div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <p className="text-gray-600 mb-4">"读书会让我养成了深度阅读的习惯，每周一本书，每周一次分享。在交流中成长，在阅读中突围。"</p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-pink-300 to-rose-500 rounded-full mr-4 flex items-center justify-center text-white font-bold">刘</div>
+                <div>
+                  <div className="font-semibold">小刘</div>
+                  <div className="text-sm text-gray-500">参与 2 年 · 普通会员</div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <p className="text-gray-600 mb-4">"AI 创业沙龙让我找到了方向，资源对接让我找到了伙伴。在突围，不仅有活动，更有实实在在的帮助。"</p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-indigo-300 to-purple-500 rounded-full mr-4 flex items-center justify-center text-white font-bold">赵</div>
+                <div>
+                  <div className="font-semibold">赵总</div>
+                  <div className="text-sm text-gray-500">参与 1 年 · 终身会员</div>
                 </div>
               </div>
             </div>
